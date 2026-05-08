@@ -10,23 +10,23 @@ Built as a demonstration of senior-level AI engineering architecture.
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  React + Vite Frontend                                        │
+│  React + Vite Frontend                                       │
 │  SSE streaming · Source citations · Document upload          │
 └───────────────────────────┬──────────────────────────────────┘
                             │ HTTP / SSE
 ┌───────────────────────────▼──────────────────────────────────┐
-│  Fastify Backend                                              │
-│                                                               │
-│  Chat Orchestrator                                            │
+│  Fastify Backend                                             │
+│                                                              │
+│  Chat Orchestrator                                           │
 │    ├─ RAG: embed query → vector search → inject context      │
 │    ├─ Tool loop: OpenAI function calling → execute → repeat  │
 │    └─ Stream final response via SSE                          │
-│                                                               │
-│  Infrastructure (all behind interfaces — swappable)           │
-│    ├─ InMemoryVectorStore  →  Pinecone / pgvector             │
-│    ├─ OpenAILLMService     →  Azure / Anthropic / Groq        │
-│    ├─ PDF / TXT / MD parsers                                  │
-│    └─ MockHRApiClient      →  Real HRIS                       │
+│                                                              │
+│  Infrastructure (all behind interfaces — swappable)          │
+│    ├─ InMemoryVectorStore  →  Pinecone / pgvector            │
+│    ├─ OpenAILLMService     →  Azure / Anthropic / Groq       │
+│    ├─ PDF / TXT / MD parsers                                 │
+│    └─ MockHRApiClient      →  Real HRIS                      │
 └──────────────────────────────────────────────────────────────┘
 ```
 
