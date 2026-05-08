@@ -24,7 +24,6 @@ export class RetrievalService {
   async retrieve(query: string, options: RetrievalOptions = {}): Promise<ScoredChunk[]> {
     const topK = options.topK ?? MAX_RETRIEVAL_RESULTS;
     const minScore = options.minScore ?? 0.3;
-
     if (this.vectorStore.count() === 0) {
       log.debug('Vector store is empty — skipping retrieval');
       return [];
