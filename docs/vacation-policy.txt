@@ -1,4 +1,4 @@
-John Doe GmbH — VACATION AND TIME-OFF POLICY
+JohnDoe GmbH — VACATION AND TIME-OFF POLICY
 Effective Date: January 1, 2024
 Last Reviewed: October 2024
 
@@ -47,7 +47,7 @@ in bonus calculations.
 5. PUBLIC HOLIDAYS
 =============================================================
 
-John Doe GmbH observes 10 federal public holidays per year. These are not deducted
+JohnDoe GmbH observes 10 federal public holidays per year. These are not deducted
 from vacation entitlement. When a public holiday falls on a weekend, the closest
 weekday will be observed as the holiday.
 
@@ -59,5 +59,5 @@ Upon resignation or termination, employees will be paid out for accrued but unus
 vacation days up to a maximum of 20 days. This payout is calculated at the
 employee's current base rate of pay.
 
-For questions about your vacation balance, please contact HR at hr@acmecorp.com
+For questions about your vacation balance, please contact HR at hr@johndoegmbh.com
 or use the HR portal self-service feature.

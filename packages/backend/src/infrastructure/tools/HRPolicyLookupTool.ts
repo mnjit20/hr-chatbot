@@ -10,7 +10,7 @@ const ParamsSchema = z.object({
 });
 
 const POLICY_DATA: Record<z.infer<typeof ParamsSchema>['topic'], string> = {
-  maternity_leave: 'John Doe GmbH provides 16 weeks of fully paid maternity leave. Paternity/partner leave is 8 weeks fully paid. Adoption leave matches maternity leave policy.',
+  maternity_leave: 'JohnDoe GmbH provides 16 weeks of fully paid maternity leave. Paternity/partner leave is 8 weeks fully paid. Adoption leave matches maternity leave policy.',
   sick_leave: 'Employees receive unlimited sick days for personal illness. A doctor\'s note is required for absences longer than 5 consecutive days.',
   remote_work: 'Employees may work remotely up to 3 days per week. Core hours are 10am-3pm in the employee\'s local timezone. Full remote arrangements require VP approval.',
   performance_review: 'Performance reviews occur twice per year: July and January. Ratings are 1-5 scale. Ratings of 4+ are eligible for merit increases.',

@@ -1,12 +1,12 @@
-# John Doe GmbH Employee Handbook
+# JohnDoe GmbH Employee Handbook
 
 **Version 4.2 | Updated: Q4 2024**
 
 ---
 
-## Welcome to John Doe GmbH
+## Welcome to JohnDoe GmbH
 
-We're glad you're here. This handbook outlines the policies, benefits, and expectations that govern your employment at John Doe GmbH. Please read it carefully and reach out to HR with any questions.
+We're glad you're here. This handbook outlines the policies, benefits, and expectations that govern your employment at JohnDoe GmbH. Please read it carefully and reach out to HR with any questions.
 
 ---
 
@@ -58,12 +58,12 @@ Employees with a rating of **4 or above** are eligible for merit-based salary in
 
 ### Health Insurance
 
-John Doe GmbH covers **90% of health insurance premiums** for employees and **75% for dependents**. Coverage begins on the first day of the month following your start date.
+JohnDoe GmbH covers **90% of health insurance premiums** for employees and **75% for dependents**. Coverage begins on the first day of the month following your start date.
 
 Available plans:
 - PPO Gold (low deductible, higher premium)
 - PPO Silver (balanced)
-- HDHP with HSA (high deductible, Acme contributes $500/year to HSA)
+- HDHP with HSA (high deductible, JohnDoe contributes $500/year to HSA)
 
 ### Dental & Vision
 
@@ -72,7 +72,7 @@ Available plans:
 
 ### 401(k) Retirement Plan
 
-Acme matches **100% of contributions up to 4% of your salary**. Matching contributions vest on a 4-year cliff schedule. Employees are eligible to enroll after 3 months of employment.
+JohnDoe matches **100% of contributions up to 4% of your salary**. Matching contributions vest on a 4-year cliff schedule. Employees are eligible to enroll after 3 months of employment.
 
 ### Life Insurance
 
@@ -124,7 +124,7 @@ Leave may be taken continuously or intermittently (with HR approval) within 12 m
 
 ## Sick Leave
 
-John Doe GmbH offers **unlimited sick leave** for personal illness. A doctor's note is required for absences longer than **5 consecutive business days**. Sick leave cannot be used for non-illness reasons (use vacation or personal days instead).
+JohnDoe GmbH offers **unlimited sick leave** for personal illness. A doctor's note is required for absences longer than **5 consecutive business days**. Sick leave cannot be used for non-illness reasons (use vacation or personal days instead).
 
 Mental health days are treated the same as physical illness days — no documentation required for single-day absences.
 
@@ -132,8 +132,8 @@ Mental health days are treated the same as physical illness days — no document
 
 ## Contact HR
 
-- **Email:** hr@acmecorp.com
-- **HR Portal:** hr.acmecorp.internal
+- **Email:** hr@johndoegmbh.com
+- **HR Portal:** hr.johndoegmbh.internal
 - **Phone:** extension 4700
 - **Office hours:** Monday–Friday, 9 AM – 5 PM local time
 

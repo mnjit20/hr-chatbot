@@ -1,4 +1,4 @@
-# John Doe GmbH Benefits Guide 2024
+# JohnDoe GmbH Benefits Guide 2024
 
 A quick-reference summary of all employee benefits.
 
@@ -7,7 +7,7 @@ A quick-reference summary of all employee benefits.
 ## Health & Wellness
 
 ### Medical Insurance
-- **Acme covers:** 90% employee, 75% dependents
+- **JohnDoe covers:** 90% employee, 75% dependents
 - **Effective:** First of month after start date
 - **Open enrollment:** November 1–15 each year
 - **Plans:** PPO Gold, PPO Silver, HDHP+HSA
@@ -55,7 +55,7 @@ A quick-reference summary of all employee benefits.
 | Paternity/Partner | 8 weeks | Fully paid |
 | Bereavement | 5 days | Immediate family; 3 days for extended |
 | Jury Duty | As required | Full pay maintained |
-| Public Holidays | 10 days | Federal holidays + Acme-designated days |
+| Public Holidays | 10 days | Federal holidays + JohnDoe-designated days |
 
 ---
 
@@ -82,8 +82,8 @@ Approved uses:
 - **Home office stipend:** $500 one-time for remote-primary employees
 - **Company laptop:** MacBook Pro or Windows equivalent, refreshed every 3 years
 - **Team offsites:** Annual all-hands + quarterly team events, expenses covered
-- **Employee discounts:** 20% off Acme products; partnerships with retail/travel vendors
+- **Employee discounts:** 20% off JohnDoe products; partnerships with retail/travel vendors
 
 ---
 
-*For full policy details, see the Employee Handbook or contact HR at hr@acmecorp.com*
+*For full policy details, see the Employee Handbook or contact HR at hr@johndoegmbh.com*

@@ -33,7 +33,7 @@ export class PromptBuilder {
       ? this.buildContextSection(context)
       : '(No document context retrieved — answer from general knowledge or use tools.)';
 
-    return `You are an HR assistant for John Doe GmbH. You help employees with HR-related questions professionally and concisely.
+    return `You are an HR assistant for JohnDoe GmbH. You help employees with HR-related questions professionally and concisely.
 
 Today's date: ${today}
 
