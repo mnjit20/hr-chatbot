@@ -36,6 +36,7 @@ Built as a demonstration of senior-level AI engineering architecture.
 - No LangChain — OpenAI function calling is already the right abstraction
 - SSE over WebSockets — unidirectional streaming is all we need
 - Zod for all validation at system boundaries
+- Per-route rate limiting — tighter caps on expensive LLM/embedding endpoints
 
 ---
 
@@ -152,7 +153,58 @@ Remove a document and its vector embeddings.
 
 ### `GET /health`
 
-Health check.
+Health check — returns `{ status, timestamp, env }`. Not rate-limited.
+
+---
+
+## Rate Limiting
+
+All endpoints are protected by `@fastify/rate-limit`. Limits are defined centrally in `src/config/constants.ts` (`RATE_LIMIT`) and applied per-route.
+
+| Endpoint | Limit | Reason |
+|---|---|---|
+| `POST /api/chat/stream` | **20 req / min** | Each request triggers an LLM completion + embedding call |
+| `POST /api/documents` | **10 req / min** | Triggers document parsing + batch embedding (most expensive) |
+| `DELETE /api/documents/:id` | **30 req / min** | Cheap, but prevents accidental bulk deletes |
+| All other routes | **100 req / min** | Global fallback |
+
+### Response headers
+
+Every response includes standard rate-limit headers so clients can back off gracefully:
+
+```
+x-ratelimit-limit: 20
+x-ratelimit-remaining: 19
+x-ratelimit-reset: 1717200060
+retry-after: 45
+```
+
+### 429 error envelope
+
+When a limit is exceeded the server returns `HTTP 429` with a consistent error shape:
+
+```json
+{
+  "error": "Too many requests — please slow down. Try again in 45 seconds.",
+  "code": "RATE_LIMIT_EXCEEDED",
+  "retryAfter": "45 seconds"
+}
+```
+
+### Scaling to multiple instances
+
+The default store is in-memory (per-process). To share limits across multiple backend instances, pass a Redis client to the plugin in `src/index.ts`:
+
+```typescript
+import Redis from 'ioredis';
+
+await fastify.register(rateLimit, {
+  // ...existing options...
+  redis: new Redis(process.env.REDIS_URL),
+});
+```
+
+No other code changes required.
 
 ---
 
@@ -244,6 +296,7 @@ parserRegistry.register('application/vnd.openxmlformats-officedocument.wordproce
 | `MockHRApiClient` | Real HRIS (Workday / BambooHR) with OAuth |
 | No auth | JWT middleware + employee ID from token |
 | Console logging | Pino → Datadog / Grafana Loki |
+| In-process rate limit store | Redis — share limits across multiple instances |
 
 ---
 
@@ -264,7 +317,7 @@ parserRegistry.register('application/vnd.openxmlformats-officedocument.wordproce
 
 ## Tech Stack
 
-**Backend:** Fastify · TypeScript · OpenAI SDK · pdf-parse · Zod · Vitest
+**Backend:** Fastify · @fastify/rate-limit · TypeScript · OpenAI SDK · pdf-parse · Zod · Vitest
 
 **Frontend:** React 18 · Vite · Zustand · react-markdown · Vitest · Testing Library
 
