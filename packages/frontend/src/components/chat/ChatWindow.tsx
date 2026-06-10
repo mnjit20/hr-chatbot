@@ -52,7 +52,7 @@ export function ChatWindow() {
           <span className="chat-window__icon">🤖</span>
           <div>
             <h1 className="chat-window__name">HR Chatbot</h1>
-            <p className="chat-window__subtitle">Powered by AI · Trenkwalder Group</p>
+            <p className="chat-window__subtitle">Powered by AI</p>
           </div>
         </div>
         {messages.length > 0 && (
