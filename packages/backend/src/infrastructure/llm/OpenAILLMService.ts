@@ -14,7 +14,6 @@ export interface OpenAIConfig {
   embeddingModel: string;
   baseURL?: string;
 }
-
 export class OpenAILLMService implements ILLMService {
   private readonly client: OpenAI;
 
